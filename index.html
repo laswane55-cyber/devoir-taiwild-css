@@ -1,83 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Mon Portfolio</title>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-100">
-    <!--navbar-->
-nav class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" class="text-xl font-bold text-gray-800">Mon Porte Folio</a>
-        <div>
-            <a href="#" class="text-gray-600 hover:text-gray-800 mx-2">Sur moi</a>
-            <a href="#" class="text-gray-600 hover:text-gray-800 mx-2">Projects</a>
-            <a href="#" class="text-gray-600 hover:text-gray-800 mx-2">Contact</a>
+
+<body class="bg-gray-100 text-center">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+
+            <a href="#" class="text-2xl font-bold text-blue-700">
+                Mon Portfolio
+            </a>
+
+            <div class="space-x-4">
+
+                <a href="#surmoi"
+                    class="text-gray-600 hover:text-blue-600">
+                    Sur moi
+                </a>
+
+                <a href="#competences"
+                    class="text-gray-600 hover:text-blue-600">
+                    competences
+                </a>
+
+                <a href="#contact"
+                    class="text-gray-600 hover:text-blue-600">
+                    Contact
+                </a>
+
+            </div>
 
         </div>
-    </div>
-    <!-- sur moi-->
-    <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Sur moi</h2>
-        <p class="text-gray-600 mb-8">Je suis un développeur passionné avec une expérience dans la création de sites web modernes et réactifs. J'aime apprendre de nouvelles technologies et relever des défis pour créer des solutions innovantes.</p>
-        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">En savoir plus</a>
-        <!-- projects-->
-    </section>
-    <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white shadow rounded p-4">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Project 1</h3>
-                <p class="text-gray-600 mb-4">Description du projet 1. C'est un projet incroyable qui utilise les dernières technologies pour résoudre des problèmes complexes.</p>
-                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Voir le projet</a>
-            </div>
-            <div class="bg-white shadow rounded p-4">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Project 2</h3>
-                <p class="text-gray-600 mb-4">Description du projet 2. C'est un projet innovant qui a été conçu pour améliorer l'expérience utilisateur et offrir des fonctionnalités uniques.</p>
-                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Voir le projet</a>
-            </div>
-            <div class="bg-white shadow rounded p-4">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Project 3</h3>
-                <p class="text-gray-600 mb-4">Description du projet 3. C'est un projet passionnant qui a été développé pour répondre à un besoin spécifique dans l'industrie.</p>
-                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Voir le projet</a>
-            </div>
+
+    </nav>
+
+    <!-- Hero -->
+    <section class="container mx-auto px-4 py-20">
+
+        <h1 class="text-5xl font-bold text-gray-800 mb-6">
+            Salut 👋 Je suis
+            <span class="text-blue-700">
+                Amadou Wane
+            </span>
+        </h1>
+
+        <p class="text-xl text-gray-600 mb-8">
+            Développeur Web & Mobile passionné
+        </p>
+        <!--image-->
+        <div class="flex justify-center mb-8">
+            <img src="img.jpeg" alt="Amadou Wane"
+                class="w-48 h-48 rounded-full border-4 border-blue-600">
+
         </div>
-        <!-- contact-->
+
+        <a href="#competences"
+            class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        competences
+        </a>
+
     </section>
-    <section class="container mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact</h2>
-        <p class="text-gray-600 mb-8">Si vous souhaitez me contacter pour discuter de projets, collaborations ou simplement pour dire bonjour, n'hésitez pas à m'envoyer un message.</p>
-        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Me contacter</a>
-    <!-- formulaire de contact -->
-     <section class="max-w-4xl mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Contactez-moi</h2>
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nom</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Votre nom">
+
+    <!-- Sur Moi -->
+    <section id="surmoi" class="container mx-auto px-4 py-16">
+
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">
+<!-- Compétences -->
+<section id="competences" class="container mx-auto px-4 py-16">
+
+    <h2 class="text-4xl font-bold text-gray-800 mb-10">
+        Mes Compétences
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- HTML -->
+        <div class="bg-white shadow-lg rounded-xl p-6">
+
+            <h3 class="text-2xl font-bold mb-4 text-orange-600">
+                HTML
+            </h3>
+
+            <p class="text-gray-600">
+                Création de structures web modernes et responsives.
+            </p>
+
+        </div>
+
+        <!-- CSS -->
+        <div class="bg-white shadow-lg rounded-xl p-6">
+
+            <h3 class="text-2xl font-bold mb-4 text-blue-600">
+                CSS
+            </h3>
+
+            <p class="text-gray-600">
+                Design moderne et animations pour les interfaces web.
+            </p>
+
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="bg-white shadow-lg rounded-xl p-6">
+
+            <h3 class="text-2xl font-bold mb-4 text-cyan-500">
+                Tailwind CSS
+            </h3>
+
+            <p class="text-gray-600">
+                Création rapide d’interfaces modernes et professionnelles.
+            </p>
+
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="bg-white shadow-lg rounded-xl p-6">
+
+            <h3 class="text-2xl font-bold mb-4 text-purple-600">
+                Bootstrap
+            </h3>
+
+            <p class="text-gray-600">
+                Développement rapide de sites responsive.
+            </p>
+
+        </div>
+
+        <!-- Java -->
+        <div class="bg-white shadow-lg rounded-xl p-6">
+
+            <h3 class="text-2xl font-bold mb-4 text-red-600">
+                Java
+            </h3>
+
+            <p class="text-gray-600">
+                Développement d’applications et programmation orientée objet.
+            </p>
+
+        </div>
+
+        <!-- MySQL -->
+        <div class="bg-white shadow-lg rounded-xl p-6">
+
+            <h3 class="text-2xl font-bold mb-4 text-blue-800">
+                MySQL
+            </h3>
+
+            <p class="text-gray-600">
+                Gestion et création de bases de données relationnelles.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-16">
+
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">
+            Contactez-moi
+        </h2>
+
+        <p class="text-gray-600 mb-10">
+            N’hésitez pas à m’envoyer un message.
+        </p>
+
+        <form class="bg-white shadow-lg rounded-xl px-8 py-8">
+
+            <div class="mb-6 text-left">
+
+                <label class="block text-gray-700 font-bold mb-2">
+                    Nom
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Votre nom"
+                    class="w-full border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Votre email">
+
+            <div class="mb-6 text-left">
+
+                <label class="block text-gray-700 font-bold mb-2">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    placeholder="Votre email"
+                    class="w-full border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
             </div>
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
-                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Votre message"></textarea>
+
+            <div class="mb-6 text-left">
+
+                <label class="block text-gray-700 font-bold mb-2">
+                    Message
+                </label>
+
+                <textarea
+                    rows="5"
+                    placeholder="Votre message"
+                    class="w-full border rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
             </div>
-            <div class="flex items-center justify-between">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                    Envoyer
-                </button>
-            </div>
+
+            <button
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
+
+                Envoyer
+
+            </button>
+
         </form>
 
-     </section>
-     <!-- footer-->
-     <footer class="bg-white shadow mt-16">
-        <div class="container mx-auto px-4 py-4 text-center text-gray-600">
-            &copy; LASS WANE. Tous droits réservés.
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow mt-16">
+
+        <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+
+            © Amadou Wane - Tous droits réservés.
+
         </div>
 
+    </footer>
+
 </body>
+
+</html>
